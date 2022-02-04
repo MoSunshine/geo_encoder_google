@@ -7,3 +7,6 @@ Application to get the lat and lon values of an adress via the google maps api.
 2. Change the command in the run.bat.<br/>
 3. Add your API key to the config.properties file.<br/>
 4. Run the bat file.<br/>
+
+# Libraries
+Pandas, jproperties
