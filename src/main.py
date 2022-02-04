@@ -8,6 +8,14 @@ from geo_encoder_google import geo_encoder_google
 import sys
 
 def main(file):
+    """
+    main methode to start the geo encoding.
+    
+    Returns
+    -------
+    None.
+    """
+    
     geo_encoder_object = geo_encoder_google()
     geo_encoder_object.encode_location(file)
     

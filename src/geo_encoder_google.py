@@ -58,6 +58,21 @@ class geo_encoder_google():
     
     
     def encode_location(self,file):
+        """
+        Uses the data from the dataset to build a request to the google maps api. The answere of the request is an json file with the lat and lon value of the location. 
+        The methode adds the lat and lon values to the dataset and creats an output csv file.
+
+        Parameters
+        ----------
+        file : str
+            Name of the input file. Also used for the output file.
+
+        Returns
+        -------
+        None.
+
+        """
+        
         dataset = self.read_dataset(file)
         print(dataset)
         dataset.reset_index(inplace=True)
